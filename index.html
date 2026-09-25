@@ -1,0 +1,177 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Shifting Gears Site Review</title>
+<style>
+  :root{
+    --ink:#221f1d; --ink-soft:#65605a;
+    --paper:#f6f4f1; --card:#ffffff; --card-alt:#eeece7;
+    --line:#e1ded7;
+    --accent:#7c2d3b; --accent-soft:#f4e6e8;
+    --slate:#4c5a68; --slate-soft:#e7ebee;
+    --good:#3e8055;
+    background:var(--paper);
+    color-scheme: light;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap');
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding-inline:20px; padding-block:36px 60px; line-height:1.65;
+  }
+  .wrap{max-width:700px; margin:0 auto;}
+  h1,h2{font-family:'Fraunces', Georgia, serif; text-wrap:balance; font-weight:600; color:var(--ink); margin:0;}
+
+  header{padding-bottom:22px; border-bottom:1px solid var(--line); margin-bottom:30px;}
+  .eyebrow{font-size:12.5px; letter-spacing:.09em; text-transform:uppercase; color:var(--slate); font-weight:700; margin-bottom:10px;}
+  h1{font-size:clamp(26px,4.5vw,34px); line-height:1.15;}
+  .intro{color:var(--ink-soft); font-size:15.5px; margin-top:14px; max-width:56ch;}
+  .intro + .intro{margin-top:10px;}
+
+  section{margin-bottom:36px;}
+  h2{font-size:19px; margin-bottom:14px;}
+  .section-note{color:var(--ink-soft); font-size:14px; margin:-8px 0 16px; max-width:56ch;}
+
+  ul.list{display:grid; gap:9px; margin:0; padding:0;}
+  ul.list li{
+    list-style:none; display:flex; gap:11px; align-items:flex-start;
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:12px 15px; font-size:14.5px;
+  }
+  ul.list li .mark{flex:none; font-weight:700; margin-top:1px;}
+  ul.list.working li .mark{color:var(--good);}
+  ul.list.plan li .mark{color:var(--accent);}
+  ul.list li b{display:block; color:var(--ink); font-weight:600;}
+  ul.list li span.desc{display:none;}
+
+  .tier-label{
+    display:inline-block; font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--slate); background:var(--slate-soft); padding:3px 10px; border-radius:99px; margin-bottom:12px;
+  }
+
+  .closing{
+    background:var(--accent-soft); border-radius:12px; padding:18px 22px; margin-top:8px;
+  }
+  .closing p{margin:0; font-size:14.5px;}
+  .closing p + p{margin-top:8px;}
+
+  footer{margin-top:44px; padding-top:16px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-soft);}
+
+  .title-row{display:flex; align-items:center; gap:7px; flex-wrap:wrap;}
+  .proof-thumb{
+    display:block; width:30px; height:30px; object-fit:cover; border-radius:5px; border:1px solid var(--line);
+    cursor:pointer; transition:transform .15s ease, border-color .15s ease;
+  }
+  .proof-thumb:hover, .proof-thumb:focus-visible{border-color:var(--accent); transform:translateY(-1px);}
+  @media (prefers-reduced-motion: reduce){ .proof-thumb{transition:none;} .proof-thumb:hover{transform:none;} }
+
+  .lightbox{position:fixed; inset:0; background:rgba(20,18,15,.86); display:flex; align-items:center; justify-content:center; flex-direction:column; gap:12px; z-index:50; padding:24px;}
+  .lightbox img{max-width:min(92vw,880px); max-height:78vh; border-radius:10px; box-shadow:0 20px 60px rgba(0,0,0,.45); background:#fff;}
+  .lightbox-caption{color:#f3f1ec; font-size:14px;}
+  .lightbox-close{
+    position:absolute; top:18px; right:20px; background:rgba(255,255,255,.14); color:#fff; border:none;
+    width:36px; height:36px; border-radius:50%; font-size:19px; line-height:1; cursor:pointer;
+  }
+  .lightbox-close:focus-visible, .proof-thumb:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Site Review · sgtrips.com</div>
+  <h1>A look at your website, and where we start</h1>
+</header>
+
+<section>
+  <h2>What's already working well</h2>
+  <p class="section-note">Worth saying up front — this is a healthy foundation, not a rebuild.</p>
+  <ul class="list working">
+    <li><span class="mark">✓</span><div><b>Your tour pages are set up correctly</b><span class="desc"> — dates, pricing, and location all show up the way Google expects, which is what lets your tours appear properly in search.</span></div></li>
+    <li><span class="mark">✓</span><div><b>The site is secure and technically clean</b><span class="desc"> — every page loads correctly, nothing broken, nothing misconfigured under the hood.</span></div></li>
+    <li><span class="mark">✓</span><div><b>It works well on mobile</b><span class="desc"> — layout holds up cleanly on a phone, which is where most of your visitors probably are.</span></div></li>
+    <li><span class="mark">✓</span><div><b>Your homepage copy is genuinely good</b><span class="desc"> — clear, specific, written for a real person, not generic filler.</span></div></li>
+    <li><span class="mark">✓</span><div><b>A 5.0-star rating</b><span class="desc"> — this is the hard part. Most businesses never get here. Everything below is about making sure more people find it.</span></div></li>
+  </ul>
+</section>
+
+<section>
+  <h2>What I'd fix first</h2>
+  <p class="section-note">Fast, low-effort, and the ones quietly costing you the most right now.</p>
+  <ul class="list plan">
+    <li><span class="mark">1</span><div>
+      <div class="title-row">
+        <b>Speed up your homepage</b>
+        <img class="proof-thumb" src="/_blob/a3ba2e4cd0b4f27e3c6d6cea028bb972" data-caption="Desktop — Performance score 49/100" alt="Site speed report, desktop: performance score 49 out of 100">
+        <img class="proof-thumb" src="/_blob/e983e1116ddb45d47f198e277f80b302" data-caption="Mobile — Performance score 44/100" alt="Site speed report, mobile: performance score 44 out of 100">
+      </div>
+      <span class="desc"> — it's currently loading a lot of large, uncompressed photos from Instagram. On a phone or slower connection, that can mean a visitor leaves before the page even finishes loading.</span>
+    </div></li>
+    <li><span class="mark">2</span><div><b>Turn on real analytics</b><span class="desc"> — right now there's no way to see which tours people are finding through Google, or which pages are actually converting into bookings. This gets that visibility in place.</span></div></li>
+    <li><span class="mark">3</span><div><b>Clean up old tour listings</b><span class="desc"> — a number of past tour dates are still showing up in Google as if they're bookable today. Tidying these up keeps search results pointing to tours you're actually running.</span></div></li>
+  </ul>
+</section>
+
+<section>
+  <h2>What I'd tackle after that</h2>
+  <p class="section-note">Cleans up how Google reads and ranks the site long-term.</p>
+  <ul class="list plan">
+    <li><span class="mark">4</span><div><b>Give every tour its own description</b><span class="desc"> — many pages currently share the same generic search snippet. Each tour should describe itself.</span></div></li>
+    <li><span class="mark">5</span><div><b>Fix duplicate page titles</b><span class="desc"> — several tour dates currently show the same title in search, making them hard to tell apart before clicking.</span></div></li>
+    <li><span class="mark">6</span><div><b>Connect the site together better</b><span class="desc"> — right now very few pages link to each other, and there's no footer with contact info. Both matter for how visitors and Google navigate the site.</span></div></li>
+    <li><span class="mark">7</span><div><b>Make your business info consistent</b><span class="desc"> — your phone number appears in two different formats across the site. Small thing, but it's one of the signals Google uses for local search trust.</span></div></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Smaller polish</h2>
+  <ul class="list plan">
+    <li><span class="mark">+</span><div><b>Cleaner breadcrumbs in search results</b><span class="desc"> — shows a readable path instead of a raw web address.</span></div></li>
+    <li><span class="mark">+</span><div><b>Better-looking shared links</b><span class="desc"> — so when a customer shares a tour on Facebook, it looks inviting instead of blank.</span></div></li>
+    <li><span class="mark">+</span><div><b>A general accessibility pass</b><span class="desc"> — small fixes like image descriptions that also give a little extra SEO credit.</span></div></li>
+  </ul>
+</section>
+
+<footer>sgtrips.com review</footer>
+
+</div>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">×</button>
+  <img id="lightbox-img" src="" alt="">
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<script>
+(function(){
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lightbox-img');
+  var lbCap = document.getElementById('lightbox-caption');
+
+  function openLB(src, caption){
+    lbImg.src = src;
+    lbImg.alt = caption || '';
+    lbCap.textContent = caption || '';
+    lb.hidden = false;
+  }
+  function closeLB(){
+    lb.hidden = true;
+    lbImg.src = '';
+  }
+
+  document.querySelectorAll('.proof-thumb').forEach(function(thumb){
+    thumb.setAttribute('tabindex', '0');
+    thumb.setAttribute('role', 'button');
+    thumb.addEventListener('click', function(){ openLB(thumb.src, thumb.dataset.caption); });
+    thumb.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openLB(thumb.src, thumb.dataset.caption); }
+    });
+  });
+
+  lb.addEventListener('click', function(e){ if (e.target === lb) closeLB(); });
+  document.getElementById('lightbox-close').addEventListener('click', closeLB);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !lb.hidden) closeLB(); });
+})();
+</script>
+
+</body></html>
